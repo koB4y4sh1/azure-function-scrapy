@@ -42,3 +42,4 @@ def crawl_scrapy(myTimer: func.TimerRequest) -> None:
     
     except Exception as e:
         logging.exception(f"❌ クローリング中に予期しないエラーが発生しました: {e}")
+        raise e
