@@ -45,7 +45,7 @@ class WebCrawlSpider(CrawlSpider):
         self.allowed_domains = [urlparse(url).netloc for url in start_urls]
         self.start_urls = start_urls
         self.page_count = 0
-        self.max_pages = 5
+        self.max_pages = 100
 
     rules = (
         Rule(
